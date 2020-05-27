@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .flex-container {
+      background: #f4f4f4;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+      /* Cross-axis align items for flex */
+      align-items: center;
+      /* Main-axis align item for flex */
+      justify-content: center;
+      /* flex-wrap: wrap; */
+      /* flex-direction: row-reverse; */
+    }
+    .item {
+      background: #f4f4f4;
+      border: 1px #333333 solid;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 6px;
+      /* flex: grow shrink basis */
+      /* flex: 1 0 100px; */
+      /* width: 200px; */
+      /* flex-grow: 1; */
+    }
+    .item-1 {
+      /* Align item in flex */
+      align-self: flex-start;
+    }
+    /* .item-2 {
+      flex-grow: 1;
+      flex-basis: 0;
+    } */
+    .item-3 {
+      /* Align item in flex */
+      align-self: flex-end;
+    }
+  </style>
+  <title>Flex Basics</title>
+  <div class="flex-container">
+    <div class="item item-1">
+      <h2>Item One</h2>
+    </div>
+    <div class="item item-2">
+      <h2>Item Two</h2>
+    </div>
+    <div class="item item-3">
+      <h2>Item Three</h2>
+    </div>
+  </div>
+</head>
+<body>
+  
+</body>
+</html>
